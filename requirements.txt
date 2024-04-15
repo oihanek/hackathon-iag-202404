@@ -1,15 +1,9 @@
 uvicorn[standard]==0.27.1
-gunicorn==21.2.0
 fastapi[all]==0.109.2
 langchain~=0.1.11
 langchain-openai~=0.0.6
 langchain-community~=0.0.27
 openai~=1.12.0
-tiktoken~=0.6.0
 azure-ai-documentintelligence~=1.0.0b1
 azure-identity~=1.15.0
-azure-storage-blob~=12.19.0
-azure-search-documents~=11.4.0
-fastapi-microsoft-identity~=0.1.6
-azure-cosmos~=4.5.1
-python-multipart~=0.0.9
+#fastapi-microsoft-identity~=0.1.6
