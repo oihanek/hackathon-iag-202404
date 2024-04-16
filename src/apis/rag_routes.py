@@ -1,6 +1,6 @@
 from typing import Any
 
-from fastapi import APIRouter, UploadFile
+from fastapi import APIRouter, UploadFile, Depends
 from fastapi.responses import JSONResponse
 
 from models.chat import ChatRequest
@@ -25,7 +25,7 @@ def ingest_document(document: UploadFile, model_id: str) -> Any:
 
 
 @router.post("/chat")
-def chat(request: ChatRequest) -> Any:
+def chat(request: ChatRequest = Depends()) -> Any:
     try:
         rag = RetrievalAugmentedGeneration.get()
         return rag.ask_to_documents(question=request.question)

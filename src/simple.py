@@ -26,7 +26,7 @@ class SimpleLLMClient(metaclass=Singleton):
 
     def ask(self, question):
         # Run the LLM
-        return self.llm.invoke(question)
+        return self.llm.invoke(question).content
 
     def ask_with_chain(self, question):
         prompt = PromptTemplate.from_template(
