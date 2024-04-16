@@ -1,9 +1,0 @@
-uvicorn[standard]==0.27.1
-fastapi[all]==0.109.2
-langchain~=0.1.11
-langchain-openai~=0.0.6
-langchain-community~=0.0.27
-openai~=1.12.0
-azure-ai-documentintelligence~=1.0.0b1
-azure-identity~=1.15.0
-#fastapi-microsoft-identity~=0.1.6
